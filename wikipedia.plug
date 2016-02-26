@@ -1,0 +1,9 @@
+[Core]
+Name = Wikipedia
+Module = wiki
+
+[Python]
+Version = 2+
+
+[Documentation]
+Description = Basic Err integration with wikipedia.org
