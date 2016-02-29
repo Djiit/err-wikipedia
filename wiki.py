@@ -41,7 +41,7 @@ class WikipediaPlugin(BotPlugin):
 
     @botcmd(split_args_with=None)
     def wiki_describe(self, mess, args):
-        """Fetch the upcoming events for a from meetup.com."""
+        """Fetch the upcoming events for a from wikipedia.org."""
         if len(args) == 0:
             return 'What do you want me to describe ?'
         try:
@@ -52,6 +52,11 @@ class WikipediaPlugin(BotPlugin):
         except wikipedia.exceptions.PageError:
             return "No wikipedia entry found."
         return '{0} ({1})'.format(self.format_summary(res.summary), res.url)
+
+    @botcmd(split_args_with=None)
+    def describe(self, mess, args):
+        """Shortcut for wiki_describe"""
+        return self.wiki_describe(mess, args)
 
     def format_summary(self, summary):
         return (summary[:self.config['SUMMARY_MAX_LENGTH']]+'...'
