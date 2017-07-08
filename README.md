@@ -1,4 +1,4 @@
-# err-meetup - meetup.com plugin for Err
+# err-wikipedia - wikipedia.com plugin for Err
 
 [![Build Status](https://travis-ci.org/Djiit/err-meetup.svg?branch=master)](https://travis-ci.org/Djiit/err-wikipedia) [![Coverage Status](https://coveralls.io/repos/github/Djiit/err-wikipedia/badge.svg?branch=master)](https://coveralls.io/github/Djiit/err-wikipedia?branch=master)
 
